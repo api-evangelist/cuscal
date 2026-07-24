@@ -1,0 +1,37 @@
+generated: '2026-07-24'
+method: searched
+source: https://www.cuscal.com/payments/issuing/digital-enablement/ and Cuscal Developer Hub (CMS REST API docs)
+spec_type: Webhooks
+note: >-
+  Cuscal's CMS REST API family (Digital Card Issuance, Card Controls, PIN
+  Services) documents webhook notifications that deliver real-time
+  transaction-status and account/card lifecycle events to onboarded issuers. No
+  public AsyncAPI document or machine-readable event catalog is published; the
+  event schemas sit behind client onboarding on the ReadMe-hosted Developer Hub.
+  The event categories below are captured from Cuscal's public marketing and
+  Developer Hub descriptions, not from a published spec — specific event names,
+  payload schemas and delivery/retry semantics require authenticated access.
+webhooks:
+- name: card-lifecycle-events
+  category: card
+  description: >-
+    Notifications for card lifecycle changes (issuance, activation, digital
+    wallet provisioning of a card into the 'Pays', and status changes).
+  documented: true
+  schema_available: false
+- name: transaction-status-events
+  category: transaction
+  description: >-
+    Real-time transaction-status notifications delivered as card transactions
+    are authorized/processed.
+  documented: true
+  schema_available: false
+- name: account-events
+  category: account
+  description: >-
+    Account-level event notifications associated with cardholder accounts.
+  documented: true
+  schema_available: false
+delivery:
+  transport: https
+  note: Webhook (HTTP callback) delivery to onboarded issuer endpoints; retry/signing semantics not publicly documented.

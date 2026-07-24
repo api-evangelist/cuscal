@@ -1,0 +1,30 @@
+# Cuscal
+
+> Cuscal Limited (ASX: CCL) is Australia's largest independent provider of payments and regulated data services outside the Big Four banks. Founded in 1966 and an APRA/ASIC-regulated Authorised Deposit-taking Institution, Cuscal supplies the connectivity and processing layer beneath hundreds of banks, mutuals, credit unions, fintechs, non-bank lenders and corporates: scheme card issuing and acquiring, the New Payments Platform (NPP with PayID and PayTo), Direct Entry, BPAY, RTGS, ATM services, AI-driven fraud monitoring, and Consumer Data Right (open banking) data-holder and accredited-data-recipient services. Its API posture is B2B and relationship-gated: a public Developer Hub documents CMS REST APIs for card issuing, but full reference and machine-readable specs sit behind client onboarding.
+
+## APIs
+- [Cuscal Digital Card Issuance API](https://www.cuscal.com/payments/issuing/digital-enablement/): Instant digital card issuance and provisioning of cards into mobile/digital wallets ("the Pays"), with webhook notifications for card lifecycle events.
+- [Cuscal Card Controls API](https://www.cuscal.com/payments/issuing/digital-enablement/): Lock/unlock cards and block transaction types so cardholders and back-office staff can control card usage and reduce fraud.
+- [Cuscal PIN Services API](https://www.cuscal.com/payments/issuing/digital-enablement/): Self-service PIN set and change functionality that issuers embed in mobile payment apps.
+
+## Documentation
+- [Developer Hub](https://www.developerhub.cuscal.com.au/): ReadMe.io-hosted developer portal for Cuscal's CMS REST APIs (content gated behind client onboarding).
+- [Payments product family](https://www.cuscal.com/payments/): NPP, card issuing/acquiring, Direct Entry, BPAY, RTGS, ATM, fraud, and CDR services.
+- [Digital Enablement with Issuing APIs](https://www.cuscal.com/payments/issuing/digital-enablement/): Overview of the Digital Card Issuance, Card Controls and PIN Services APIs.
+- [Developer Hub Terms & Conditions](https://www.cuscal.com.au/cuscal-developer-hub-terms-and-conditions): Terms of use for the Developer Hub.
+- [Enablement & Support Services](https://www.cuscal.com/payments/enablement-support/enablement-support-services/): Client enablement and support.
+
+## Event surface
+- Webhooks: Cuscal's CMS REST APIs deliver webhook notifications for card lifecycle, transaction-status, and account events (schemas gated behind onboarding). No public AsyncAPI is published.
+
+## Notes
+- No public, downloadable OpenAPI/Swagger definition is available; the reference and specs are gated behind client onboarding.
+- Authentication scheme is not publicly documented; consistent with onboarded API-key / OAuth2 client-credentials for issuer integrations, but unverified.
+- Standards participation: Consumer Data Right (CDR), NPP/ISO 20022 (PayID, PayTo), BPAY, Direct Entry (BECS), RTGS, and the Visa/Mastercard/eftpos card schemes.
+
+## More
+- [Company website](https://www.cuscal.com/)
+- [Newsroom / blog](https://www.cuscal.com/newsroom/)
+- [Payments Hub client portal](https://www.cuscalpaymentshub.com.au/)
+- [Privacy Policy](https://www.cuscal.com/privacy-policy/)
+- [LinkedIn](https://www.linkedin.com/company/cuscal)

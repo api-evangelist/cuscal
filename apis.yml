@@ -89,6 +89,8 @@ apis:
   - type: APIReference
     url: https://www.developerhub.cuscal.com.au/
 common:
+- type: DomainSecurity
+  url: security/cuscal-domain-security.yml
 - type: Website
   url: https://www.cuscal.com/
 - type: DeveloperPortal
@@ -101,8 +103,24 @@ common:
   url: https://www.cuscal.com/newsroom/
 - type: PrivacyPolicy
   url: https://www.cuscal.com/privacy-policy/
+- type: TermsOfService
+  url: https://www.cuscal.com.au/cuscal-developer-hub-terms-and-conditions
+- type: Support
+  url: https://www.cuscal.com/payments/enablement-support/enablement-support-services/
+- type: GitHubOrganization
+  url: https://github.com/cuscal
 - type: LinkedIn
   url: https://www.linkedin.com/company/cuscal
+- type: DomainSecurity
+  url: security/cuscal-domain-security.yml
+- type: Conformance
+  url: conformance/cuscal-conformance.yml
+- type: Packages
+  url: packages/cuscal-packages.yml
+- type: Webhooks
+  url: asyncapi/cuscal-webhooks.yml
+- type: LLMsTxt
+  url: llms/cuscal-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com

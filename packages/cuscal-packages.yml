@@ -1,0 +1,23 @@
+generated: '2026-07-24'
+method: searched
+source: npm registry search (scope @cuscal)
+note: >-
+  Cuscal publishes no public API client SDK for its gated CMS REST APIs
+  (Digital Card Issuance, Card Controls, PIN Services); those integrations are
+  delivered under client onboarding. The only first-party package located on a
+  public registry is a scoped @cuscal design-system/common utility library, not
+  a client library for consuming the payments APIs. PyPI, and a public GitHub
+  org with source, were checked: the github.com/cuscal org exists but publishes
+  zero public repositories. Recorded honestly; no SDKs pointer is emitted
+  because no API-consumer SDK is published.
+packages:
+- language: javascript
+  registry: npm
+  name: "@cuscal/cuscal-ds-common-node-lib"
+  url: https://www.npmjs.com/package/@cuscal/cuscal-ds-common-node-lib
+  install: npm install @cuscal/cuscal-ds-common-node-lib
+  official: true
+  api_client: false
+  note: >-
+    First-party (published under the @cuscal npm org scope). Design-system /
+    common Node utility library, not a client SDK for the payments APIs.

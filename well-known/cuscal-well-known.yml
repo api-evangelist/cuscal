@@ -1,0 +1,30 @@
+generated: '2026-07-24'
+method: searched
+source: live probes of /.well-known/* on Cuscal hosts
+note: >-
+  No /.well-known discovery documents are published on any Cuscal host. The
+  Developer Hub (ReadMe.io) and Payments Hub return 302 redirects to their SPA
+  shell for every well-known path; www.cuscal.com returns 404. Recorded as a
+  negative result (no SecurityTxt / WellKnown / OpenID discovery surface).
+hosts:
+- host: https://www.developerhub.cuscal.com.au
+  documents:
+  - {path: /.well-known/security.txt, status: 302}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 302}
+- host: https://www.cuscal.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+- host: https://www.cuscalpaymentshub.com.au
+  documents:
+  - {path: /.well-known/security.txt, status: 302}
+  - {path: /.well-known/openid-configuration, status: 302}
+  - {path: /.well-known/oauth-authorization-server, status: 302}
+  - {path: /.well-known/api-catalog, status: 302}
+  - {path: /.well-known/ai-plugin.json, status: 302}
