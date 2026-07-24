@@ -1,0 +1,108 @@
+aid: cuscal
+name: Cuscal
+review:
+  question: Does Cuscal expose a public, self-serve API with downloadable OpenAPI definitions?
+  answer: false
+  date: '2026-07-24'
+  reviewer: API Evangelist
+findings:
+  summary: |
+    Cuscal is Australia's largest independent payments and regulated-data
+    services provider outside the Big Four (ASX: CCL, an APRA/ASIC-regulated
+    ADI, founded 1966). Its home market is Australia and it sits on the
+    infrastructure layer of Australian payments: scheme card issuing and
+    acquiring, the New Payments Platform (NPP, including PayID and PayTo),
+    Direct Entry, BPAY, RTGS, ATM services, AI-based fraud monitoring, and
+    Consumer Data Right (open banking) data-holder / accredited-data-recipient
+    services.
+
+    Cuscal runs a genuine, public-facing Developer Hub at
+    https://www.developerhub.cuscal.com.au/ (ReadMe.io-hosted; the ReadMe
+    subdomain "cuscal-redirect-group" is visible in the page shell). The hub
+    documents a family of CMS REST APIs for card issuers - a Digital Card
+    Issuance API (provisioning cards into mobile/digital wallets), a Card
+    Controls API (lock/unlock and transaction-type restrictions), and a PIN
+    Services API (self-service PIN set/change) - and states that webhook
+    notifications deliver real-time transaction-status and account events.
+
+    No public downloadable OpenAPI/Swagger definition was reachable. Every
+    request to the Developer Hub and its ReadMe spec paths (/openapi.json,
+    /openapi.yaml, /swagger.json, /reference, /api-docs) returned 403 or 429
+    with only the ReadMe SPA shell; the substantive reference and any
+    machine-readable spec sit behind client onboarding. The Developer Hub root
+    itself returns HTTP 200 with a browser user-agent, confirming a live portal.
+    This is a relationship-gated B2B integration surface (financial institutions
+    and fintechs onboard under contract), not an open self-serve developer API,
+    so this profile is recorded as a documented-but-gated stub. Zero OpenAPI
+    files were harvested.
+  homeMarket: Australia
+  developerPortal:
+    url: https://www.developerhub.cuscal.com.au/
+    httpStatus: 200
+    confirmed: true
+    platform: ReadMe.io
+    note: >-
+      Live portal (200 with browser UA). Underlying host
+      prod.cuscaldeveloperhub.com.au returns 403/429 to automated requests and
+      serves only the ReadMe Angular SPA shell; documented API content is gated
+      behind client onboarding.
+  downloadableSpecs:
+    found: false
+    count: 0
+    note: >-
+      No OpenAPI/Swagger definition publicly reachable. Probed /openapi.json,
+      /openapi.yaml, /swagger.json, /reference, /api-docs, /pages/*.html - all
+      403/429 SPA shell, none parsed as a spec.
+  authModel:
+    scheme: unconfirmed
+    note: >-
+      Auth scheme not publicly documented outside the gated hub; consistent with
+      onboarded API-key / OAuth2 client-credentials for issuer integrations, but
+      not verified. No public /.well-known/openid-configuration served on the
+      developer or payments hosts.
+  webhooks:
+    present: true
+    note: >-
+      Cuscal marketing and CMS REST API docs describe webhook notifications for
+      real-time transaction-status and account events. No public AsyncAPI or
+      event catalog was found.
+  postman:
+    present: false
+    note: No public Postman workspace or collection located.
+  railsPosture:
+    note: >-
+      As an NPP/BPAY/Direct Entry/RTGS participant and CDR data provider,
+      Cuscal's scheme and rail integrations follow the Australian Payments Plus
+      (AP+) and CDR technical standards rather than a Cuscal-published OpenAPI.
+      No ISO 20022 message schemas are published on the public site.
+  transports:
+  - protocol: REST
+    scheme: https
+    documented: true
+    note: CMS REST APIs (Issuing, Card Controls, PIN Services) documented on the Developer Hub; base URL not publicly listed.
+  - protocol: Webhooks
+    scheme: https
+    documented: true
+    note: Webhook notifications referenced for transaction and account events; no public spec.
+sources:
+- url: https://www.cuscal.com/
+  type: Website
+  note: Company overview - ASX-listed (CCL), ADI, payments + regulated data provider. HTTP 200.
+- url: https://www.cuscal.com/payments/
+  type: Documentation
+  note: Payments product family (NPP, cards/issuing, Direct Entry, BPAY, RTGS, acquiring, ATM, fraud, CDR). HTTP 200.
+- url: https://www.cuscal.com/payments/issuing/digital-enablement/
+  type: Documentation
+  note: Documents Digital Card Issuance, Card Controls and PIN Services APIs plus the Developer Hub link. HTTP 200.
+- url: https://www.developerhub.cuscal.com.au/
+  type: DeveloperPortal
+  note: Live Developer Hub (ReadMe.io). HTTP 200 with browser UA; content gated.
+- url: https://prod.cuscaldeveloperhub.com.au/pages/home.html
+  type: APIReference
+  note: Underlying ReadMe host; HTTP 403/429 to automated requests, SPA shell only.
+- url: https://www.cuscalpaymentshub.com.au/
+  type: Portal
+  note: Client Payments Hub / Smart Gateway login portal. HTTP 200.
+- url: https://en.wikipedia.org/wiki/Cuscal
+  type: Reference
+  note: Corporate history, ADI status, ASX listing, membership of eftpos Payments Australia and APCA.
