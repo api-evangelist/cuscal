@@ -33,7 +33,7 @@ tags:
 - Banking-as-a-Service
 created: '2026-07-24'
 modified: '2026-07-24'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis:
 - aid: cuscal:cuscal-digital-card-issuance-api
   name: Cuscal Digital Card Issuance API
