@@ -30,6 +30,18 @@ tags:
 - Consumer Data Right
 - Account-to-Account
 - Fraud
+- Banking as a Service
+tags_raw:
+- Payments
+- Australia
+- Card Issuing
+- Issuer Processor
+- Real-Time Payments
+- Acquiring
+- Open Banking
+- Consumer Data Right
+- Account-to-Account
+- Fraud
 - Banking-as-a-Service
 created: '2026-07-24'
 modified: '2026-07-24'
@@ -80,6 +92,10 @@ apis:
     client onboarding.
   humanURL: https://www.cuscal.com/payments/issuing/digital-enablement/
   tags:
+  - PIN
+  - Cards
+  - Self-Service
+  tags_raw:
   - PIN
   - Cards
   - Self Service
