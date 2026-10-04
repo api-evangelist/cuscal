@@ -42,6 +42,9 @@ accessModel:
   generated: '2026-09-02'
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+x-docs-platform: readme
+x-docs-platform-confidence: high
+x-docs-platform-checked: 2026-09-25
 tags:
 - Payments
 - Australia
@@ -52,7 +55,7 @@ tags:
 - Open Banking
 - Consumer Data Right
 - Account-to-Account
-- Fraud
+- Fraud Prevention
 - Banking as a Service
 tags_raw:
 - Payments
@@ -98,6 +101,10 @@ apis:
     reference is gated behind client onboarding.
   humanURL: https://www.cuscal.com/payments/issuing/digital-enablement/
   tags:
+  - Card Controls
+  - Fraud Prevention
+  - Cards
+  tags_raw:
   - Card Controls
   - Fraud
   - Cards
