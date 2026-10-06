@@ -70,7 +70,7 @@ tags_raw:
 - Fraud
 - Banking-as-a-Service
 created: '2026-07-24'
-modified: '2026-07-24'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 apis:
 - aid: cuscal:cuscal-digital-card-issuance-api
@@ -135,6 +135,8 @@ apis:
   - type: APIReference
     url: https://www.developerhub.cuscal.com.au/
 common:
+- url: https://www.cuscal.com/feed/
+  type: BlogRSS
 - type: DomainSecurity
   url: security/cuscal-domain-security.yml
 - type: Website
