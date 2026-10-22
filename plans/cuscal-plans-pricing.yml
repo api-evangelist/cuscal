@@ -1,0 +1,17 @@
+name: Cuscal pricing
+generated: '2026-10-21'
+method: none
+source: https://www.developerhub.cuscal.com.au/
+audience: unclear
+pricing_basis: negotiated
+published: false
+delivery:
+  model: managed
+plan_count: 0
+plans: []
+note: >-
+  Cuscal publishes no API plans or prices. The Developer Hub (ReadMe, checked
+  2026-10-21, HTTP 200) states it serves "existing client[s]" and "new
+  client[s]" and gates Guides and API Reference behind SSO login (/docs,
+  /reference and /changelog all 302 back to the hub root). Commercial terms are
+  agreed through B2B client onboarding; no pricing page was found on the site.

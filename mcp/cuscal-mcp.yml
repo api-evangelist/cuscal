@@ -1,0 +1,34 @@
+type: MCPServer
+name: Cuscal Developer Hub MCP (gated)
+generated: '2026-10-21'
+method: probed
+source: preflight/cuscal.json contract_discovery.gated (2026-10-21) -- https://www.developerhub.cuscal.com.au/mcp
+status: gated
+server:
+  url: https://www.developerhub.cuscal.com.au/mcp
+  host_platform: readme
+  platform_evidence: www.developerhub.cuscal.com.au CNAME ssl.readmessl.com (preflight docs_platform, confidence high)
+auth: unknown
+tools: []
+tool_count: null
+deployment:
+  mode: remote
+  endpoint: https://www.developerhub.cuscal.com.au/mcp
+  install: null
+  package: null
+  auth: unknown
+  verified: probed
+probe:
+  url: https://www.developerhub.cuscal.com.au/mcp
+  status: 401
+  control_status: 404
+  verdict: gated
+  probed_by: preflight-wave.py (2026-10-21); not re-called in this pass
+notes: >-
+  Cuscal does not publicly document or advertise an MCP server. Its developer hub
+  (www.developerhub.cuscal.com.au) is a ReadMe-hosted portal behind a login, and its
+  /mcp path answered 401 where a control path answered 404. That matches ReadMe's
+  platform-hosted docs MCP sitting behind the hub's authentication. No tool list was
+  retrievable (no tools/list was sent, and no public page names tools), and there is
+  no public OpenAPI to derive candidate tools from, so tools is empty. Treat this as an
+  observed, credential-gated documentation MCP. It is not a confirmed payments-operations surface.

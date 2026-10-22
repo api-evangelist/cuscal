@@ -1,4 +1,4 @@
-generated: '2026-07-24'
+generated: '2026-10-21'
 method: searched
 source: npm registry search (scope @cuscal)
 note: >-
@@ -18,6 +18,9 @@ packages:
   install: npm install @cuscal/cuscal-ds-common-node-lib
   official: true
   api_client: false
+  version: 0.0.6
+  published: '2024-04-29'
+  version_source: https://registry.npmjs.org/@cuscal%2fcuscal-ds-common-node-lib
   note: >-
     First-party (published under the @cuscal npm org scope). Design-system /
     common Node utility library, not a client SDK for the payments APIs.

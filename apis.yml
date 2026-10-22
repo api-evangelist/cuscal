@@ -1,7 +1,11 @@
 aid: cuscal
+
 url: https://raw.githubusercontent.com/api-evangelist/cuscal/refs/heads/main/apis.yml
+
 name: Cuscal
+
 kind: company
+
 description: >-
   Cuscal Limited is Australia's largest independent provider of payments and
   regulated data services outside the Big Four banks, founded in 1966 and listed
@@ -18,6 +22,7 @@ description: >-
   for card issuing, card controls and PIN services with webhook notifications,
   but the full reference and any machine-readable OpenAPI definitions sit behind
   client onboarding rather than open self-serve signup.
+
 deliveryModel:
   model: saas
   open_source: false
@@ -29,6 +34,7 @@ deliveryModel:
   - pricing
   generated: '2026-08-28'
   method: derived
+
 accessModel:
   pricing: unknown
   onboarding: unknown
@@ -41,10 +47,15 @@ accessModel:
   - security
   generated: '2026-09-02'
   method: derived
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+
+image: https://www.cuscal.com/wp-content/uploads/2025/04/cuscal-logo.svg
+
 x-docs-platform: readme
+
 x-docs-platform-confidence: high
+
 x-docs-platform-checked: 2026-09-25
+
 tags:
 - Payments
 - Australia
@@ -57,6 +68,7 @@ tags:
 - Account-to-Account
 - Fraud Prevention
 - Banking as a Service
+
 tags_raw:
 - Payments
 - Australia
@@ -69,9 +81,59 @@ tags_raw:
 - Account-to-Account
 - Fraud
 - Banking-as-a-Service
+
 created: '2026-07-24'
-modified: '2026-10-06'
+
+modified: '2026-10-21'
+
 specificationVersion: '0.23'
+
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
+
+common:
+- type: Hosts
+  url: hosts/cuscal-hosts.yml
+- type: Vendors
+  url: vendors/cuscal-vendors.yml
+- type: SDKs
+  url: packages/cuscal-packages.yml
+- url: https://www.cuscal.com/feed/
+  type: BlogRSS
+- type: DomainSecurity
+  url: security/cuscal-domain-security.yml
+- type: Website
+  url: https://www.cuscal.com/
+- type: DeveloperPortal
+  url: https://www.developerhub.cuscal.com.au/
+- type: Documentation
+  url: https://www.cuscal.com/payments/
+- type: Portal
+  url: https://www.cuscalpaymentshub.com.au/
+- type: Blog
+  url: https://www.cuscal.com/newsroom/
+- type: PrivacyPolicy
+  url: https://www.cuscal.com/privacy-policy/
+- type: TermsOfService
+  url: https://www.cuscal.com.au/cuscal-developer-hub-terms-and-conditions
+- type: Support
+  url: https://www.cuscal.com/payments/enablement-support/enablement-support-services/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/cuscal
+- type: Contact
+  url: https://www.cuscal.com/contact-us/
+- type: TermsOfService
+  url: https://www.cuscal.com/website-terms-of-use/
+- type: Careers
+  url: https://www.cuscal.com/about-us/careers/
+- type: Conformance
+  url: conformance/cuscal-conformance.yml
+- type: Packages
+  url: packages/cuscal-packages.yml
+- type: Webhooks
+  url: asyncapi/cuscal-webhooks.yml
+
 apis:
 - aid: cuscal:cuscal-digital-card-issuance-api
   name: Cuscal Digital Card Issuance API
@@ -134,41 +196,29 @@ apis:
     url: https://www.cuscal.com/payments/issuing/digital-enablement/
   - type: APIReference
     url: https://www.developerhub.cuscal.com.au/
-common:
-- url: https://www.cuscal.com/feed/
-  type: BlogRSS
-- type: DomainSecurity
-  url: security/cuscal-domain-security.yml
-- type: Website
-  url: https://www.cuscal.com/
-- type: DeveloperPortal
-  url: https://www.developerhub.cuscal.com.au/
-- type: Documentation
-  url: https://www.cuscal.com/payments/
-- type: Portal
-  url: https://www.cuscalpaymentshub.com.au/
-- type: Blog
-  url: https://www.cuscal.com/newsroom/
-- type: PrivacyPolicy
-  url: https://www.cuscal.com/privacy-policy/
-- type: TermsOfService
-  url: https://www.cuscal.com.au/cuscal-developer-hub-terms-and-conditions
-- type: Support
-  url: https://www.cuscal.com/payments/enablement-support/enablement-support-services/
-- type: GitHubOrganization
-  url: https://github.com/cuscal
-- type: LinkedIn
-  url: https://www.linkedin.com/company/cuscal
-- type: DomainSecurity
-  url: security/cuscal-domain-security.yml
-- type: Conformance
-  url: conformance/cuscal-conformance.yml
-- type: Packages
-  url: packages/cuscal-packages.yml
-- type: Webhooks
-  url: asyncapi/cuscal-webhooks.yml
-- type: LLMsTxt
-  url: llms/cuscal-llms.txt
-maintainers:
-- FN: Kin Lane
-  email: kin@apievangelist.com
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Identity pass 2026-10-21. Website www.cuscal.com verified (title names Cuscal). Developer Hub (ReadMe) is live but its Guides/API Reference sit behind SSO login; no public reference links. GitHub org github.com/cuscal removed - 0 public repos, no website link, not linked from cuscal.com, so ownership unverifiable. LinkedIn returns 999 (crawler block, kept).
+  evidence:
+  - url: https://www.cuscal.com/
+    status: 200
+  - url: https://www.developerhub.cuscal.com.au/
+    status: 200
+  - url: https://www.cuscalpaymentshub.com.au/
+    status: 200
+  - url: https://www.cuscal.com.au/cuscal-developer-hub-terms-and-conditions
+    status: 200
+  - url: https://www.cuscal.com/contact-us/
+    status: 200
+  - url: https://www.cuscal.com/website-terms-of-use/
+    status: 200
+  - url: https://www.linkedin.com/company/cuscal
+    status: 999
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 18
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

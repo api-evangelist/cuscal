@@ -1,0 +1,98 @@
+generated: '2026-10-21'
+method: searched
+source: https://www.cuscal.com/privacy-policy/
+sources:
+- url: https://www.cuscal.com/privacy-policy/
+  http_status: 200
+  note: Served 200 to a browser user-agent (fetch-url.py, plain strategy); a bare curl GET got a Cloudflare 403 challenge.
+- url: https://www.cuscal.com.au/cuscal-developer-hub-terms-and-conditions
+  http_status: 200
+signals:
+  data_subject_request:
+    url: https://www.cuscal.com/privacy-policy/
+    section: Your access to your personal information
+    channel: privacy@cuscal.com.au; Privacy Officer, Cuscal Limited, PO Box Q279, Queen Victoria Building NSW 1230 Australia
+    rights_named: [access, correction]
+    evidence:
+    - source: https://www.cuscal.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        You have a right to request access to your personal information and to request its correction. If at any
+        time you wish to know what personal information we hold about you, you may request your details by writing
+        to the Privacy Officer, Cuscal Limited at PO Box Q279, Queen Victoria Building NSW 1230 Australia or
+        privacy@cuscal.com.au .
+    note: >-
+      Access and correction rights (Australian Privacy Principles) with a named channel. No response time is
+      stated and no deletion or portability right is named on this page.
+  data_residency:
+    url: https://www.cuscal.com/privacy-policy/
+    section: Use and disclosure of personal information
+    evidence:
+    - source: https://www.cuscal.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        In some cases, we may need to transfer your personal information outside Australia and New Zealand.
+        Countries where our suppliers might hold personal information overseas currently include the United States
+        of America, United Kingdom, Italy and India.
+    note: >-
+      Data is not committed to Australia/New Zealand; the policy names the overseas countries where suppliers may
+      hold personal information. A disclosure of cross-border transfer, not a residency guarantee.
+  subprocessors:
+    url: https://www.cuscal.com/privacy-policy/
+    section: Use and disclosure of personal information
+    evidence:
+    - source: https://www.cuscal.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        We may disclose personal information to our related companies, government or regulatory authorities (where
+        required or authorised by law), outsourced service providers, our external service providers (such as our
+        professional advisers, including accountants, auditors and lawyers) and other parties who provide services
+        to us in connection with the provision of products or services you have sought from us.
+    note: >-
+      Categories of recipients only; no named subprocessor list was found on the privacy policy or the Developer Hub
+      terms. The Developer Hub terms also refer repeatedly to an unnamed "service provider" operating the Services.
+  data_retention:
+    url: https://www.cuscal.com/privacy-policy/
+    section: Security of your personal information
+    evidence:
+    - source: https://www.cuscal.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        If we no longer need your personal information (including when we are no longer required by law to keep
+        records relating to you), we will take reasonable steps to destroy or de-identify it.
+    note: Purpose-bound retention with destruction or de-identification; no fixed retention periods are published.
+  incident_notification:
+    url: https://www.cuscal.com/privacy-policy/
+    section: Security of your personal information
+    evidence:
+    - source: https://www.cuscal.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        Where we are aware of reasonable grounds to believe that a data breach has occurred which is likely to
+        result in serious harm to you, we will notify the breach to you and the Australian Information Commissioner
+        and/or New Zealand Privacy Commissioner if and when required by the Privacy Act and/or NZ Privacy Act (as
+        applicable).
+    note: >-
+      Commits to notifiable-data-breach notification to individuals and the regulator as the statute requires; no
+      contractual notification window is stated.
+  exit_assistance:
+    url: https://www.cuscal.com.au/cuscal-developer-hub-terms-and-conditions
+    evidence:
+    - source: https://www.cuscal.com.au/cuscal-developer-hub-terms-and-conditions
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        User will not have access to User Content or Resulting Data through the Service following contract
+        expiration or termination.
+    note: >-
+      A DENIAL, recorded as such: the Developer Hub terms provide no post-termination access to user content or
+      resulting data and describe no export or transition assistance.
+not_recorded:
+  transparency_report: >-
+    The only candidate is a footer link titled "Tax Transparency Report" on cuscal.com, which is a corporate tax
+    disclosure, not a platform/content-moderation transparency report. Not recorded as the signal.

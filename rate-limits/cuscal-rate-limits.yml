@@ -1,0 +1,12 @@
+name: Cuscal rate limits
+generated: '2026-10-21'
+method: none
+source: https://www.developerhub.cuscal.com.au/
+limit_count: 0
+limits: []
+note: >-
+  No rate limits are published publicly. The Developer Hub API Reference and
+  Guides are behind SSO login (paths /docs, /reference, /changelog return 302 to
+  the hub root, 2026-10-21), and the Developer Hub Terms and Conditions
+  (https://www.cuscal.com.au/cuscal-developer-hub-terms-and-conditions, HTTP
+  200) state no request quota. Any limits are only visible to onboarded clients.
