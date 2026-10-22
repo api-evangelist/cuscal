@@ -12,6 +12,10 @@ checked:
 - https://n8n.io/integrations/cuscal/
 - https://zapier.com/apps/cuscal/integrations
 - https://api.cdr.gov.au/cdr-register/v1/all/data-recipients
+- https://data.gov.au/data/dataset/asic-afs-licensee
+- https://data.gov.au/data/dataset/asic-credit-licensee
+- https://www.apra.gov.au/register-of-authorised-deposit-taking-institutions
+- https://www.apra.gov.au/registers/list-registered-general-insurers
 summary: null
 marketplace_apps: []
 edges:
@@ -45,5 +49,44 @@ edges:
     detected_by: sweep-australia-cdr-register.py
     detected: '2026-10-22'
   detected_by: sweep-australia-cdr-register.py
+  first_seen: '2026-10-22'
+- partner_name: ASIC Australian Financial Services licensees
+  partner: null
+  partner_match: register
+  type: register
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://data.gov.au/data/dataset/ab7eddce-84df-4098-bc8f-500d0d9776d1/resource/d98a113d-6b50-40e6-b65f-2612efc877f4/download/afs_lic_202610.csv
+  category: Australian financial services licence (ASIC)
+  contract_reference:
+    register: ASIC Australian Financial Services licensees
+    spec_file: null
+    standard: null
+    role: afs-licensee
+    registrations:
+    - registered_name: CUSCAL LIMITED
+      licences:
+      - AFS licence
+      - deposit and payment products
+      - non-cash payment products
+      - general insurance products
+      - derivatives
+      - securities
+      - interests in managed investment schemes
+      - market making
+      register_country: AU
+      matched_domain: cuscal.com
+      matched_by: reuse-cdr-identity
+      register_id: AFSL 244116
+      abn_acn: '95087822455'
+      state: NSW
+      start: 10/03/2004
+      identity: 'reuse: ACCC CDR register identity (domain-matched)'
+    signal_note: 'participation only: a regulator licence / authorisation listing; no API conformance is published
+      by this register'
+    detected_by: sweep-australia-afs-adi-registers.py
+    detected: '2026-10-22'
+  detected_by: sweep-australia-afs-adi-registers.py
   first_seen: '2026-10-22'
 templates: []

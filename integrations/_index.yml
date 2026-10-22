@@ -34,3 +34,42 @@
     detected: '2026-10-22'
   status: not-a-workflow
   arazzo: null
+- slug: cuscal-asic-australian-financial-services-licensees
+  label: ASIC Australian Financial Services licensees
+  partner_name: ASIC Australian Financial Services licensees
+  category: Australian financial services licence (ASIC)
+  type: register
+  channel: regulator-register
+  evidence: https://data.gov.au/data/dataset/ab7eddce-84df-4098-bc8f-500d0d9776d1/resource/d98a113d-6b50-40e6-b65f-2612efc877f4/download/afs_lic_202610.csv
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: ASIC Australian Financial Services licensees
+    spec_file: null
+    standard: null
+    role: afs-licensee
+    registrations:
+    - registered_name: CUSCAL LIMITED
+      licences:
+      - AFS licence
+      - deposit and payment products
+      - non-cash payment products
+      - general insurance products
+      - derivatives
+      - securities
+      - interests in managed investment schemes
+      - market making
+      register_country: AU
+      matched_domain: cuscal.com
+      matched_by: reuse-cdr-identity
+      register_id: AFSL 244116
+      abn_acn: '95087822455'
+      state: NSW
+      start: 10/03/2004
+      identity: 'reuse: ACCC CDR register identity (domain-matched)'
+    signal_note: 'participation only: a regulator licence / authorisation listing; no API conformance is published
+      by this register'
+    detected_by: sweep-australia-afs-adi-registers.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
