@@ -1,4 +1,4 @@
-# Cuscal (cuscal)
+# Cuscal
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,73 +64,108 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Cuscal Limited is Australia's largest independent provider of payments and regulated data services outside the Big Four banks. Founded in 1966 and listed on the ASX (ticker CCL), it is an APRA/ASIC-regulated Authorised Deposit-taking Institution that supplies the connectivity and processing layer beneath hundreds of banks, mutuals, credit unions, fintechs, non-bank lenders and corporates - card issuing and acquiring, the New Payments Platform (NPP) with PayID and PayTo, Direct Entry, BPAY, RTGS, ATM services, AI-driven fraud monitoring, and Consumer Data Right (open banking) services.
+Cuscal Limited is Australia's largest independent provider of payments and regulated data services outside the Big Four banks, founded in 1966 and listed on the ASX (ticker CCL). An Authorised Deposit-taking Institution regulated by APRA and ASIC, Cuscal supplies the connectivity and processing layer beneath hundreds of banks, mutuals, credit unions, fintechs, non-bank lenders and corporates - carrying scheme card issuing and acquiring, the New Payments Platform (NPP) with PayID and PayTo, Direct Entry, BPAY, RTGS, ATM services, AI-driven fraud monitoring, and Consumer Data Right (open banking) data-holder and accredited-data-recipient services. Its acquisitions of Indue and the Paymark/Strategic Payments Services businesses broadened its issuer-processor and acquiring reach. Cuscal's API posture is B2B and relationship-gated: it runs a public-facing Developer Hub (ReadMe-hosted) documenting CMS REST APIs for card issuing, card controls and PIN services with webhook notifications, but the full reference and any machine-readable OpenAPI definitions sit behind client onboarding rather than open self-serve signup.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/cuscal/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/cuscal/refs/heads/main/apis.yml)
+**Areas:** Payments · Australia · Card Issuing · Issuer Processor · Real-Time Payments · Acquiring · Open Banking · Consumer Data Right · Account-to-Account · Fraud Prevention · Banking as a Service
 
-## API Posture
+## Cuscal on APIs.io
 
-Cuscal runs a public-facing Developer Hub (ReadMe.io-hosted) documenting a family of CMS REST APIs for card issuers, with webhook notifications for transaction and account events. The hub root is live, but the full reference and any machine-readable OpenAPI definitions are gated behind client onboarding - this is a relationship-based B2B integration surface, not an open self-serve developer API. No downloadable OpenAPI/Swagger spec was publicly reachable at profiling time.
+Everything profiled for Cuscal is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/cuscal/](https://apis.io/providers/cuscal/)** — or go straight to one of the APIs or properties below.
 
-- **Developer Hub:** [https://www.developerhub.cuscal.com.au/](https://www.developerhub.cuscal.com.au/)
-- **Home market:** Australia
+### APIs (3)
 
-## Tags
+- [Cuscal Digital Card Issuance API](https://apis.io/apis/cuscal/cuscal-digital-card-issuance-api/) — Part of Cuscal's CMS REST API family for card issuers. Enables instant digital card issuance and provisioning of cards into mobile and digital wallets (the…
+- [Cuscal Card Controls API](https://apis.io/apis/cuscal/cuscal-card-controls-api/) — CMS REST API letting cardholders and back-office staff control and restrict card usage - locking and unlocking cards and blocking certain transaction types…
+- [Cuscal PIN Services API](https://apis.io/apis/cuscal/cuscal-pin-services-api/) — CMS REST API providing self-service PIN set and change functionality that issuers can embed in mobile payment apps, removing reliance on PIN mailers.…
 
-- Payments
-- Australia
-- Card Issuing
-- Issuer Processor
-- Real-Time Payments
-- Acquiring
-- Open Banking
-- Consumer Data Right
-- Account-to-Account
-- Fraud
-- Banking-as-a-Service
+### Published properties
 
-## Timestamps
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- **Created:** 2026-07-24
-- **Modified:** 2026-07-24
+#### AsyncAPI (1)
 
-## APIs
+Event-driven and webhook contracts.
 
-### Cuscal Digital Card Issuance API
+- [Cuscal Webhooks](https://apis.io/asyncapis/cuscal/cuscal-webhooks/)
 
-Instant digital card issuance and provisioning of cards into mobile and digital wallets (the 'Pays') for online and in-store transactions, with webhook notifications for card lifecycle events.
+#### Security (1)
 
-- **Human URL:** [https://www.cuscal.com/payments/issuing/digital-enablement/](https://www.cuscal.com/payments/issuing/digital-enablement/)
-- [Documentation](https://www.cuscal.com/payments/issuing/digital-enablement/)
-- [API Reference](https://www.developerhub.cuscal.com.au/)
+Authentication, trust centre, and vulnerability disclosure.
 
-### Cuscal Card Controls API
+- [Cuscal Domain Security](https://apis.io/security/cuscal/cuscal-domain-security/)
 
-Lets cardholders and back-office staff control and restrict card usage - locking/unlocking cards and blocking transaction types to reduce fraud.
+#### Plans and pricing (1)
 
-- **Human URL:** [https://www.cuscal.com/payments/issuing/digital-enablement/](https://www.cuscal.com/payments/issuing/digital-enablement/)
-- [Documentation](https://www.cuscal.com/payments/issuing/digital-enablement/)
-- [API Reference](https://www.developerhub.cuscal.com.au/)
+Published plans, tiers and prices.
 
-### Cuscal PIN Services API
+- [Cuscal Plans Pricing](https://apis.io/plans/cuscal/cuscal-plans-pricing/)
 
-Self-service PIN set and change functionality that issuers can embed in mobile payment apps, removing reliance on PIN mailers.
+#### Rate limits (1)
 
-- **Human URL:** [https://www.cuscal.com/payments/issuing/digital-enablement/](https://www.cuscal.com/payments/issuing/digital-enablement/)
-- [Documentation](https://www.cuscal.com/payments/issuing/digital-enablement/)
-- [API Reference](https://www.developerhub.cuscal.com.au/)
+Published request limits.
 
-## Common Properties
+- [Cuscal Rate Limits](https://apis.io/rate-limits/cuscal/cuscal-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.cuscal.com/)
-- [Developer Portal](https://www.developerhub.cuscal.com.au/)
 - [Documentation](https://www.cuscal.com/payments/)
-- [Payments Hub Portal](https://www.cuscalpaymentshub.com.au/)
-- [Blog / Newsroom](https://www.cuscal.com/newsroom/)
-- [Privacy Policy](https://www.cuscal.com/privacy-policy/)
-- [LinkedIn](https://www.linkedin.com/company/cuscal)
+- [Support](https://www.cuscal.com/payments/enablement-support/enablement-support-services/)
+- [Blog](https://www.cuscal.com/newsroom/)
+- [Terms of service](https://www.cuscal.com.au/cuscal-developer-hub-terms-and-conditions)
+- [Privacy policy](https://www.cuscal.com/privacy-policy/)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 30.2** — thin · rubric 0.24.0 · scored 2026-10-21
+
+| Facet | Score |
+|---|---|
+| Discoverability | 69.6 |
+| Contract quality | 39.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 32.1 |
+| Access clarity | 21.1 |
+
+**Agent readiness 22.9** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | yes |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 17.0** — Payments
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/cuscal/](https://apis.io/providers/cuscal/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Cuscal: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/cuscal/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
